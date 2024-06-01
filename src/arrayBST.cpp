@@ -41,7 +41,7 @@ void ArrayBinarySearchTree::addBST(int data) {
         if (index < MAX_NUM_NODES) {
             nodes[index] = new ArrayNode(data);
         } else {
-            std::cerr << "Tree is full, cannot add more nodes." << std::endl;
+            std::cout << "Tree is full, cannot add more nodes." << std::endl;
         }
     }
 }
