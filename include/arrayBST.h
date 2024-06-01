@@ -2,12 +2,17 @@
 #define MAX_NUM_NODES 128
 #include "BSTinterface.h"
 
-struct ArrayNode{
+// ArrayNode structure
+struct ArrayNode
+{
     int value;
-    ArrayNode(int value):value(value){}
+    bool isOccupied;
+
+    ArrayNode() : value(0), isOccupied(false) {}
+    ArrayNode(int value) : value(value), isOccupied(true) {}
 };
 
-
+// ArrayBinarySearchTree class definition
 class ArrayBinarySearchTree : public InterfaceBST
 {
 public:
@@ -19,5 +24,5 @@ public:
     virtual bool searchBST(int targetKey);
 
 private:
-    ArrayNode* nodes[3];
+    ArrayNode *nodes[MAX_NUM_NODES];
 };
