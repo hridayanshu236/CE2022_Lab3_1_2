@@ -1,5 +1,5 @@
 #define ArrayBST_h
-#define MAX_NUM_NODES 128
+#define MAX_NUM_NODES 112
 #include "BSTinterface.h"
 
 // ArrayNode structure

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "LinkedListBST.h"
+#include "../include/LinkedListBST.h"
 
 using namespace std;
 
