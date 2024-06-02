@@ -1,4 +1,5 @@
 #include <iostream>
+#include"../Include/quick.h"
 using namespace std;
 
 int partition(int arr[], int start, int end)
