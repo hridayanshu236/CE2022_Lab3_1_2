@@ -126,3 +126,11 @@ bool ArrayBinarySearchTree::searchBST(int targetKey) {
     }
     return false;
 }
+// Print the tree
+void ArrayBinarySearchTree::printTree() {
+    for (int i = 0; i < MAX_NUM_NODES; ++i) {
+        if (nodes[i] != nullptr) {
+            std::cout << "Index " << i << ": " << nodes[i]->value << std::endl;
+        }
+    }
+}

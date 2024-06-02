@@ -22,6 +22,7 @@ public:
     virtual void addBST(int data);
     virtual bool removeBST(int keyToDelete);
     virtual bool searchBST(int targetKey);
+    void printTree();
 
 private:
     ArrayNode *nodes[MAX_NUM_NODES];
