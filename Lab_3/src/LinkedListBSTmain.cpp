@@ -2,24 +2,29 @@
 #include "LinkedListBST.h"
 using namespace std;
 
+// Main function to test the LinkedBST
 int main()
 {
-    InterfaceBST *bst = new LinkedBST();
-    cout << "Is the tree empty? " << (bst->isEmpty() ? "Yes" : "No") << endl;
+    LinkedBST bst;
 
-    bst->addBST(5);
-    bst->addBST(3);
-    bst->addBST(7);
-    bst->addBST(2);
-    bst->addBST(4);
-    bst->addBST(6);
+    cout << "Is the tree empty? " << (bst.isEmpty() ? "Yes" : "No") << endl;
 
-    cout << "Does the tree contain 4? " << (bst->searchBST(4) ? "Yes" : "No") << endl;
-    cout << "Does the tree contain 9? " << (bst->searchBST(9) ? "Yes" : "No") << endl;
-
-    bst->removeBST(7);
-    cout << "Does the tree contain 7 after removal? " << (bst->searchBST(7) ? "Yes" : "No") << endl;
-
-    delete bst;
+    bst.addBST(10);
+    bst.addBST(5);
+    bst.addBST(15);
+    bst.addBST(3);
+    bst.addBST(7);
+    bst.addBST(12);
+    bst.addBST(18);
+    cout << "Is the tree empty? " << (bst.isEmpty() ? "Yes" : "No") << endl;
+    bst.display();
+    cout << "Searching for 10: " << (bst.searchBST(10) ? "Found" : "Not Found") << endl;
+    cout << "Searching for 7: " << (bst.searchBST(7) ? "Found" : "Not Found") << endl;
+    cout << "Removing 5: " << (bst.removeBST(5) ? "Success" : "Fail") << endl;
+    bst.display();
+    cout << "Searching for 5: " << (bst.searchBST(5) ? "Found" : "Not Found") << endl;
+    cout << "Removing 10: " << (bst.removeBST(10) ? "Success" : "Fail") << endl;
+    bst.display();
+    cout << "Searching for 10: " << (bst.searchBST(10) ? "Found" : "Not Found") << endl;
     return 0;
 }
