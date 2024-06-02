@@ -1,8 +1,9 @@
 #include<iostream>
-
+#include <random> // for std::mt19937
+#include"Quick Sort/Include/quick.h"
 int main()
 {
-
+    std::mt19937 mt{}; // Instantiate a 32-bit Mersenne Twister
 	int arr[] = {1,3,5,6,9,11 };
 	int n = 6;
 
@@ -14,7 +15,4 @@ int main()
 	}
 
 	return 0;
-#include <random> // for std::mt19937
-int main(){
-    std::mt19937 mt{}; // Instantiate a 32-bit Mersenne Twister
 }
