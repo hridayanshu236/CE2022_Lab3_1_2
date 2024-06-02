@@ -168,3 +168,17 @@ bool LinkedBST::searchBST(int targetKey)
     }
     return false;
 }
+void LinkedBST::inorder(Node *node)
+{
+    if (node == nullptr)
+        return;
+    inorder(node->leftChild);
+    cout << "Node data: " << node->key << endl;
+    inorder(node->rightChild);
+}
+void LinkedBST::display()
+{
+    cout << endl;
+    inorder(root);
+    cout << endl;
+}
