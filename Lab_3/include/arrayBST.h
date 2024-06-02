@@ -25,4 +25,5 @@ public:
 
 private:
     ArrayNode *nodes[MAX_NUM_NODES];
+    int findMinIndex(int index);
 };

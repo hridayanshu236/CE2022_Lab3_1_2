@@ -14,8 +14,8 @@ int main() {
 
     std::cout << "Searching for 10: " << (bst.searchBST(10) ? "Found" : "Not Found") << std::endl;
     std::cout << "Searching for 7: " << (bst.searchBST(7) ? "Found" : "Not Found") << std::endl;
-
-    bst.removeBST(5);  // Remove not implemented
-
+    std::cout << "Searching for 5: " << (bst.searchBST(5) ? "Found" : "Not Found") << std::endl;
+    bst.removeBST(5);  
+    std::cout << "Searching for 5: " << (bst.searchBST(5) ? "Found" : "Not Found") << std::endl;
     return 0;
 }
