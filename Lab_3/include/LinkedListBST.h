@@ -15,7 +15,7 @@ class LinkedBST : public InterfaceBST
 {
 private:
     Node *root;
-
+    void inorder(Node* node);
 public:
     LinkedBST();
     ~LinkedBST();
@@ -23,4 +23,5 @@ public:
     void addBST(int data);
     bool removeBST(int keyToDelete);
     bool searchBST(int targetKey);
+    void display();
 };
