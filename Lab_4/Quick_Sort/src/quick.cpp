@@ -1,5 +1,5 @@
 #include <iostream>
-#include"../Include/quick.h"
+
 using namespace std;
 
 int partition(int arr[], int start, int end)
@@ -55,4 +55,11 @@ void quickSort(int arr[], int start, int end)
 	quickSort(arr, p + 1, end);
 }
 
+// Function to print the array
+void printArray(const int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
+}
 

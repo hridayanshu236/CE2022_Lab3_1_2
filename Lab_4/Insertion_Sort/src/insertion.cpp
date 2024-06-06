@@ -14,5 +14,12 @@ void insertionSort(int arr[], int n)
         arr[j + 1] = key;
     }
 }
+// Function to print the array
+// void printArray(const int arr[], int n) {
+//     for (int i = 0; i < n; i++) {
+//         std::cout << arr[i] << " ";
+//     }
+//     std::cout << std::endl;
+// }
 
  
