@@ -4,6 +4,7 @@ class Graph {
 private:
     std::vector<std::vector<int>> adjMatrix;
     int vertexCount;
+    int edgeCount;
     bool directed;
 
 public:
